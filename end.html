@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+   <div class="end">
+    <div class="content">
+    <i class="fa fa-trophy"></i>
+    <h1>Well Done  <span class="name"></span></h1>
+    <p><h1>Points: <span class="pointspan"></span></h1></p>
+    </div>
+   </div>
+   <script>
+   let pointsres = sessionStorage.getItem("respoints");
+   document.querySelector(".pointspan").innerHTML=pointsres;
+   let user_name = sessionStorage.getItem("name");
+   document.querySelector("span.name").innerHTML = user_name;
+</script>
+</body>
+</html>

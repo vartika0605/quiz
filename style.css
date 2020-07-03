@@ -1,0 +1,102 @@
+body {
+  font-family: "Lato";
+
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #3716ba;
+}
+.quiz{
+background: white;
+  display: grid;
+  grid-template-rows: 60px auto;
+  width: 70%;
+  height:90%;
+}
+.option{
+  list-style-type: none;
+  margin-bottom: 10px;
+  background: white;
+  font-size: 20px;
+  width: 40%;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom:5px;
+  border-radius: 20px;
+}
+
+#btn{
+  background-color: white;
+  color:#3716ba;
+  padding: 10px;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+      border-radius: 20px;
+      font-size: 20px;
+}
+#welcome_form{
+  width: 400px;
+
+}
+#welcome{
+  width:100%;
+  background: transparent;
+  color:white;
+  border:none;
+  border-bottom: 1px solid white;
+  font-size:34px;
+}
+#btn:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+#welcome:focus{
+  outline:none;
+}
+.header{
+  background: white;
+}
+.quiz-body{
+  background:#d9d7d7;
+}
+.nextQues{
+  background:#3716ba;
+  color: white;
+  border-radius: 30px;
+  margin-left: 50px;
+  font-size: 24px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+}
+.option:hover{
+  border:2px solid #3716ba;
+  cursor: pointer;
+}
+ .option.active{
+  background: #3716ba !important;
+  color:#fff !important;
+}
+.end{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #3716ba;
+}
+.content{
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.fa-trophy{
+  color: white;
+  font-size: 300px;
+  margin-left:-50px !important;
+}
